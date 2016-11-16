@@ -1,0 +1,151 @@
+** numeros romanos
+
+EQU UNO 		$8700
+EQU DOS 		$8720
+EQU TRES 		$8740 
+EQU CUATRO 		$8760 
+EQU CINCO 		$8780 
+EQU SEIS 		$87A0 
+EQU SIETE		$87C0 
+EQU OCHO		$8800
+EQU NUEVE		$8820
+EQU DIEZ		$8840
+EQU ONCE		$8860
+EQU DOCE		$8880
+EQU TRECE		$88A0
+EQU CATORCE		$88C0 
+EQU QUINCE		$88E0 
+EQU DIECISEIS	$8900 
+EQU DIECIOCHO	$8920 
+EQU DIECINUEVE	$8940 
+EQU VEINTE		$8960 
+EQU TREINTA		$8980 
+EQU CUARENTA	$8CC0 
+EQU CINCUENTA	$89C0
+EQU SESENTA 	$89E0
+EQU SETENTA 	$8A00 
+EQU SETENTA Y UNO		$8A20 
+EQU SETENTA Y DOS		$8A40 
+EQU SETENTA Y TRES		$8A60 
+EQU SETENTA Y CUATRO	$8A80 
+EQU SETENTA Y CINCO		$8AA0
+EQU SETENTA Y SEIS		$8AC0 
+EQU SETENTA Y SIETE		$8AE0 
+EQU SETENTA Y OCHO		$8B00 
+EQU SETENTA Y NUEVE		$8B20 
+EQU OCHENTA 			$8B40 
+EQU NOVENTA Y UNO		$8B60 
+EQU NOVENTA Y DOS		$8B80 
+EQU NOVENTA Y TRES		$8BA0
+EQU NOVENTA Y CUATRO	$8BC0
+EQU NOVENTA Y CINCO		$8BE0
+EQU NOVENTA Y SEIS		$8C00
+EQU NOVENTA Y SIETE		$8C20
+EQU NOVENTA Y OCHO		$8C40
+EQU NOVENTAY NUEVE		$8C60
+EQU CIEN	$8C80
+EQU MIL 	$8CA0 
+
+
+
+*****************del 1 al 16*****************+
+    ORG $8700 
+    FCC "un#"
+    ORG $8720 
+    FCC "deux#"
+    ORG $8740 
+    FCC "trois#"
+    ORG $8760 
+    FCC "quatre"
+    ORG $8780 
+    FCC "cinq#"
+    ORG $87A0 
+    FCC "six#"
+    ORG $87C0 
+    FCC "sept#"
+    ORG $87E0 
+    FCC "huit#"
+    ORG $8800
+    FCC "neuf#"
+    ORG $8820
+    FCC "dix#"
+    ORG $8840 
+    FCC "onze#"
+    ORG $8860 
+    FCC "douze#"
+    ORG $8880
+    FCC "treize#"
+    ORG $88A0
+    FCC "quatorze#"
+    ORG $88C0 
+    FCC "quinze#"
+    ORG $88E0 
+    FCC "seize#"
+    ORG $8900 
+    FCC "dix-sept#"
+    ORG $8920 
+    FCC "dix-huit#"
+    ORG $8940 
+    FCC "dix-neuf#"
+    ************* DECENAS***************
+    ORG $8960
+    FCC "vingt#"
+    ORG $8980 
+    FCC "trente#"
+    ORG $8CC0
+    FCC "quarante#"
+    ORG $89A0
+    FCC "cinquante#"
+    ORG $89C0 
+    FCC "soixante#"
+    ORG $89E0
+    FCC "quatre-vingt#"
+    *********CASO PARTICULAS 70 Y 90***************+
+    **************70*****+****
+    ORG $8A00 
+    FCC "soixante-dix#"
+    ORG $8A20 
+    FCC "soixante et onze#"
+    ORG $8A40 
+    FCC "soixante-douze#"
+    ORG $8A60  
+    FCC "soixante-treize#"
+    ORG $8A80  
+    FCC "soixante-quatorze#"
+    ORG $8AA0 
+    FCC "soixante-quinze#"
+    ORG $8AC0 
+    FCC "soixante-seize#"
+    ORG $8AE0 
+    FCC "soixante-dix-sept#"
+    ORG $8B00 
+    FCC "soixante-dix-huit#"
+    ORG $8B20 
+    FCC "soixante-dix-neuf#"
+    ************90*********
+    ORG $8B40 
+    FCC "quatre-vingt-dix#"
+    ORG $8B60 
+    FCC "quatre-vingt-onze#"
+    ORG $8B80 
+    FCC "quatre-vingt-douze#"
+    ORG $8BA0
+    FCC "quatre-vingt-treize#"
+    ORG $8BC0
+    FCC "quatre-vingt-quatorze#"
+    ORG $8BE0
+    FCC "quatre-vingt-quinze#"
+    ORG $8C00
+    FCC "quatre-vingt-seize#"
+    ORG $8C20
+    FCC "quatre-vingt-dix-sept#"
+    ORG $8C40
+    FCC "quatre-vingt-dix-huit#"
+    ORG $8C60
+    FCC "quatre-vingtdix-neuf#"
+    ******CENTENA******
+    ORG $8C80
+    FCC "cent#"
+    *******1000******
+    ORG $8CA0 
+    FCC "mille#"
